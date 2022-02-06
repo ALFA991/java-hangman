@@ -55,5 +55,9 @@ public class Hangman {
     };
 
     public static void main(String[] args) {
+        LetterReader letterReader = new LetterReader();
+        System.out.print("guess > ");
+        char letter = letterReader.readLetter();
+        System.out.println(letter);
     }
 }
